@@ -21,7 +21,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         FootballClub club = new FootballClub();
 
-        System.out.println("Enter a number of footballers: ");
+        System.out.print("Enter a number of footballers: ");
         int length = scanner.nextInt();
         System.out.println("========");
         for (int i = 0; i < length; i++) {

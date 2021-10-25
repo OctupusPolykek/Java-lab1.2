@@ -62,14 +62,15 @@ public class Footballer {
         return this.placeOfBirth;
     }
 
-    //Methods
-    public void printInfo() {
-        System.out.println("Player stats: ");
-        System.out.println("Surname: " + this.getSurname());
-        System.out.println("Date of birth: " + this.getDateBirth());
-        System.out.println("Role: " + this.getRole());
-        System.out.println("Number of games: " + this.getGames());
-        System.out.println("Number of goals scored: " + this.getGoalsScored());
-        System.out.println("Place of birth: " + this.getPlaceOfBirth());
+    @Override
+    public String toString() {
+        return "{" + "\n" +
+                " surname = " + surname + ",\n" +
+                " dateBirth = " + dateBirth + ",\n" +
+                " role = " + role + ",\n" +
+                " games = " + games + ",\n" +
+                " goalsScored = " + goalsScored + ",\n" +
+                " placeOfBirth = " + placeOfBirth + "\n" +
+                '}';
     }
 }

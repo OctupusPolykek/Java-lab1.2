@@ -19,8 +19,7 @@ public class FootballClub {
         for (Footballer footballer: this.footballers) {
             if (getFullYears(footballer.getDateBirth(), dateNow) > 20 && getGoalsPerGames(footballer) >= 0.4) {
                 System.out.println("Footballer №" + (i + 1) + ":");
-                footballer.printInfo();
-                System.out.println("========");
+                System.out.print(footballer);
             }
             i++;
         }
